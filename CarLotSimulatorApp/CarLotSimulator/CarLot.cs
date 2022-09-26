@@ -19,6 +19,12 @@ namespace CarLotSimulator
             Console.WriteLine($"Manufacturer: {Make}");
             Console.WriteLine($"Model: {Model}");
         }
-            
+
+        public static int numberOfCars;
+
+        public static void GetCars()
+        {
+            Console.WriteLine(numberOfCars);
+        }
     }
 }

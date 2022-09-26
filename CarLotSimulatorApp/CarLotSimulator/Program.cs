@@ -32,11 +32,21 @@ namespace CarLotSimulator
             };
             //Car 1 added to inventory list
             Inventory.Add(new CarLot() { Year = 2022, Make = "Chevrolet", Model = "Malibu" });
+            //New car construction -> added one more to the numberOfCars ticker
+
+            CarLot.numberOfCars++;
+
+            Console.WriteLine(CarLot.numberOfCars);
+
 
             //Car #2 properties set
             Car blackCar = new Car(2011, "BMW", "3", "Mmmmmstututu", "LautesHupen", false);
             //Car 2 added to inventory list
             Inventory.Add(new CarLot() { Year = 2011, Make = "BMW", Model = "3" });
+            //New car construction -> added one more to the numberOfCars ticker
+
+            CarLot.numberOfCars++;
+            Console.WriteLine(CarLot.numberOfCars);
 
             //Car #3 properties set
             var whiteCar = new Car();
@@ -50,20 +60,24 @@ namespace CarLotSimulator
             //Car 3 added to inventory list
             Inventory.Add(new CarLot() { Year = 2018, Make = "Tesla", Model = "S" });
 
+            //New car construction -> added one more to the numberOfCars ticker
+            CarLot.numberOfCars++;
+            Console.WriteLine(CarLot.numberOfCars);
+
             //Set the properties for each of the cars ^
 
             //Call each of the methods for each car
-            redCar.MakeEngineNoise();
-            redCar.MakeHonkNoise();
-            Console.WriteLine();
+            //redCar.MakeEngineNoise();
+            //redCar.MakeHonkNoise();
+            //Console.WriteLine();
 
-            blackCar.MakeEngineNoise();
-            blackCar.MakeHonkNoise();
-            Console.WriteLine();
+            //blackCar.MakeEngineNoise();
+            //blackCar.MakeHonkNoise();
+            //Console.WriteLine();
 
-            whiteCar.MakeEngineNoise();
-            whiteCar.MakeHonkNoise();
-            Console.WriteLine();
+            //whiteCar.MakeEngineNoise();
+            //whiteCar.MakeHonkNoise();
+            //Console.WriteLine();
 
             //*************BONUS*************//
 
@@ -76,13 +90,13 @@ namespace CarLotSimulator
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list. ^
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
-            Console.WriteLine($"We currently have {Inventory.Count} vehicles in stock. Here are their specifications:");
-            Console.WriteLine();
-                foreach (var item in Inventory)
-                    {
-                        item.PrintCarSpecs();
-                        Console.WriteLine();
-                    }
+            //Console.WriteLine($"We currently have {Inventory.Count} vehicles in stock. Here are their specifications:");
+            //Console.WriteLine();
+            //    foreach (var item in Inventory)
+            //        {
+            //            item.PrintCarSpecs();
+            //            Console.WriteLine();
+            //        }
         }
     }
 }
